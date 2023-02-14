@@ -1,2 +1,75 @@
 
 /* Your CSS Code here. */
+
+body{
+    margin: 0px auto;
+}
+
+.btns{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    /* border: 1px solid blue; */
+}
+
+
+button{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #2c0b8e;
+    background: #2c0b8e; 
+
+
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+button:hover{
+    background: #fff;
+    color: #2c0b8e
+}
+
+button:active{
+    background: #2c0b8e; 
+    color: #ffffff
+}
+
+#load_prev:disabled{
+    border:2px solid #666666;
+    background:white;
+    color: #666666
+    
+}
+
+ol{
+    list-style: upper-greek inside;
+}
+
+li{
+    /* border: 1px solid blue; */
+    margin: 1rem;
+
+    text-align: left;
+
+    font-family: 'Tahoma', 'sans-srif';
+    font-size:large;
+}
+
+#issues{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
