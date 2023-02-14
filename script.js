@@ -25,24 +25,20 @@ fetchData();
 function next(){
     pageNumberHere++;
 
-    let prevBtn = document.getElementById('load_prev');
-
-    if(pageNumberHere > 1){
-        prevBtn.disabled = false;
-    }
-
     fetchData();
 }
 
 function prev(){
 
-    pageNumberHere--;
-    let prevBtn = document.getElementById('load_prev');
-
-    if(pageNumberHere == 1){
-        prevBtn.disabled = true;
+    if(pageNumberHere >= 2){
+        pageNumberHere--;
+        fetchData();
     }
-    fetchData();
+    
+    return;
+
 }
+
+
 
 
