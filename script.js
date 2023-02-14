@@ -12,7 +12,7 @@ async function fetchData(){
     let ol = document.createElement('ol');
 
     data.map((issue) =>{
-        ol.innerHTML += `<li>${issue.title}</li>`;
+        ol.innerHTML += `<li>${issue.title} ${issue.number}</li>`;
     })
 
     let dataDiv =  document.getElementById('issues');
